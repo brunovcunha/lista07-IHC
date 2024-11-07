@@ -1,60 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>IHC Lista 07</title>
 </head>
+
 <body>
     <header>
-        <h1>
-            V Semana de Tecnologia da Informação (STI) (18 e 19/10/23)
-        </h1>
-        <nav>
-            <a href="">Sobre o envento</a>
-            <a href="">Palestras e palestrantes</a>
-            <a href="">Minicursos</a>
-        </nav>
+        <div>
+            <h1>
+                V Semana de Tecnologia da Informação (STI) (18 e 19/10/23)
+            </h1>
+            <nav>
+                <a href="#sobre">Sobre o evento</a>
+                <a href="#palestras">Palestras</a>
+                <a href="#minicursos">Minicursos</a>
+            </nav>
+        </div>
     </header>
-    
+
     <main>
-        <section>
-            <div>
-                <h1>Sobre o Evento</h1>
-                <p>Este evento vai ser realizado dentro de um evento maior, conhecido como Semana
-                    Nacional de Ciência e Tecnologia (SNCT), no IFTM campus Uberlândia Centro.
-                    No primeiro dia vai ser realizado um encontro com profissionais da área de Tecnologia da
-                    Informação e Comunicação da cidade de Uberlândia (MG) no auditório do IFTM (19h às 22h).
-                    Três profissionais de TIC terão a oportunidade de apresentar temas atuais relacionados a área
-                    de computação no formato de um TED Talk (um evento só com 3 palestras consecutivas). Cada
-                    apresentador terá de 15 a 20 minutos para abordar o tema escolhido. No segundo dia, serão
-                    oferecidos 4 (quarto) minicursos das 19h às 22h com vagas limitadas aos inscritos no evento.
-                    Os minicursos serão oferecidos nos laboratórios de informática do IFTM campus Uberlândia
-                    Centro.
-                    Para participar da 5a edição da STI é necessário se inscrever primeiramente na SNCT. Só após
-                    esse passo o participante poderá se inscrever nos eventos (palestras e minicursos) da V STI.
-                    Cada participante poderá se inscrever em apenas um único minicurso. Em relação ao TED TALK
-                    ao se inscrever nessa atividade ele estará inscrito nas 3 palestras (automaticamente).</p>
+        <section id="sobre">
+            <h1>Sobre o Evento</h1>
+            <div class="sobre-container">
+                <p>O evento é parte da <strong>Semana Nacional de Ciência e Tecnologia (SNCT)</strong>, no <strong>IFTM
+                        Uberlândia</strong>, com palestras e minicursos focados em tecnologia e inovação. Para
+                    participar, é necessário se inscrever na SNCT e escolher entre palestras e minicursos.</p>
+                <img src="https://diariodeuberlandia.com.br/images/noticias/21192/28052019194030_IFTM.jpg" alt="iftm"
+                    class="iftm">
             </div>
         </section>
-        
-        <section>
-            <div>
-                <h1>Uso de cloud computing na jornada de sustentabilidade das  empresas</h1>
 
-                <p>Resumo da palestra: Sustentabilidade está na lista de prioridades de líderes de tecnologia e de  empresas. Computação em nuvem tem um papel fundamental na jornada de melhorar e medir  as métricas de sustentabilidade de TI. Como isto acontece? Como dar o 1o. passo? Como a  AWS está ajudando empresas no mundo todo a ser mais sustentáveis? </p>
 
-                <div>
-                    <img src="./img/palestrante1.png" alt="">
+        <section id="palestras">
+            <h1>Palestras</h1>
+
+            <!-- Palestra 1 -->
+            <div class="card">
+                <div class="card-content">
+                    <h2>Uso de Cloud Computing na Sustentabilidade</h2>
+                    <ul>
+                        <li><strong>Sustentabilidade</strong> como prioridade para empresas e líderes de TI.</li>
+                        <li>A computação em nuvem é essencial para melhorar e medir as <strong>métricas de
+                                sustentabilidade</strong>.</li>
+                        <li>Exploração das vantagens e práticas sustentáveis em TI com a ajuda da AWS.</li>
+                    </ul>
+                </div>
+                <div class="card-palestrante">
+                    <img src="./img/palestrante1.png" alt="Helio Rubens Soares">
                     <div>
-                        <p>
-                            .Líder de Arquitetura de Soluções na AWS (Amazon Web Services) – especialista no  mercado educacional. Bacharel em Ciência da Computação (UFU); Mestre em Ciência da  Computação (UNICAMP); MBA em Gestão Empresarial (FGV); Formação Internacional em  Gerenciamento Estratégico de TI e Inovação pela Infosys em Mysore (Índia); Management  Executive Program na Ohio University (EUA); Profissional certificado AWS. Premiado pela IT  Mídia e PricewaterhouseCoopers em prémios de inovação por 5 anos. Já atuou como executivo  de TI em empresas como Bradesco Cartões, American Express e Startups. 
-
-                        </p>
+                        <p><strong>Helio Rubens Soares</strong></p>
+                        <ul>
+                            <li><strong>Líder de Arquitetura de Soluções</strong> na AWS.</li>
+                            <li><strong>Bacharel e Mestre</strong> em Ciência da Computação.</li>
+                            <li><strong>MBA em Gestão Empresarial</strong> pela FGV.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            <!-- Palestra 2 -->
+            <div class="card">
+                <div class="card-content">
+                    <h2>Seja o dono da sua carreira</h2>
+                    <ul>
+                        <li>Framework para avaliar e direcionar sua carreira, não importa o estágio.</li>
+                        <li>Aprenda como assumir o controle do seu desenvolvimento profissional.</li>
+                    </ul>
+                </div>
+                <div class="card-palestrante">
+                    <img src="./img/palestrante2.png" alt="Helton Valentini">
+                    <div>
+                        <p><strong>Helton Valentini</strong></p>
+                        <ul>
+                            <li><strong>Sócio-diretor</strong> na Ene Soluções.</li>
+                            <li><strong>Bacharel em Sistemas de Informação</strong> pela UNITRI.</li>
+                            <li><strong>Master in Business</strong> pela Link School of Business.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Palestra 3 -->
+            <div class="card">
+                <div class="card-content">
+                    <h2>A Lei Geral de Proteção de Dados (LGPD) na Internet</h2>
+                    <ul>
+                        <li><strong>LGPD</strong> e sua importância na proteção de dados pessoais online.</li>
+                        <li>Impacto da lei na internet e responsabilidades das empresas.</li>
+                        <li>Exemplos de implementação e desafios da conformidade com a LGPD.</li>
+                    </ul>
+                </div>
+                <div class="card-palestrante">
+                    <img src="./img/palestrante3.png" alt="Almir Garcia Fernandes">
+                    <div>
+                        <p><strong>Almir Garcia Fernandes</strong></p>
+                        <ul>
+                            <li><strong>Professor</strong> de Direito na UFU.</li>
+                            <li><strong>Advogado</strong> especialista em Direito Empresarial.</li>
+                            <li><strong>Doutor em Direito</strong> pela PUC-SP.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </section>
+
+        <section id="minicursos">
+            <h1>Minicursos</h1>
+
+            <!-- Minicurso 1 -->
+            <div class="card">
+                <div class="card-content">
+                    <h2>Implementando um assistente com IA Generativa</h2>
+                    <ul>
+                        <li><strong>Sem pré-requisitos</strong>.</li>
+                        <li>Criação de assistente com <strong>IA Generativa</strong> usando a API GPT.</li>
+                    </ul>
+                </div>
+                <div class="card-minicurso">
+                    <img src="./img/palestrante4.png" alt="Henrique Moreira Amorim">
+                    <div>
+                        <p><strong>Henrique Moreira Amorim</strong> e <strong>Elifazio Bernardes da Silva</strong></p>
+                        <ul>
+                            <li><strong>Desenvolvedores Júnior</strong> no Bradesco.</li>
+                            <li><strong>Certificados</strong> em Microsoft Azure Fundamentals e AI Fundamentals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minicurso 2 -->
+            <div class="card">
+                <div class="card-content">
+                    <h2>GitHub Copilot: Seu Assistente de IA para Programação</h2>
+                    <ul>
+                        <li><strong>Pré-requisito:</strong> Conhecimento de lógica de programação.</li>
+                        <li>Use <strong>GitHub Copilot</strong> para acelerar seu desenvolvimento de código.</li>
+                    </ul>
+                </div>
+                <div class="card-minicurso">
+                    <img src="./img/palestrante5.png" alt="Gledson Rodrigues de Oliveira Junior">
+                    <div>
+                        <p><strong>Gledson Rodrigues</strong></p>
+                        <ul>
+                            <li><strong>Analista de Sistemas</strong> no Bradesco.</li>
+                            <li>Certificado AZ-900 (Microsoft Azure Fundamentals).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minicurso 3 -->
+            <div class="card">
+                <div class="card-content">
+                    <h2>Criando e gerenciando containers com o Docker</h2>
+                    <ul>
+                        <li><strong>Pré-requisito:</strong> Conhecimento básico em programação.</li>
+                        <li>Introdução ao Docker, criação e gerenciamento de containers.</li>
+                    </ul>
+                </div>
+                <div class="card-minicurso">
+                    <img src="./img/palestrante6.png" alt="Marcus Adriano Ferreira Pereira">
+                    <div>
+                        <p><strong>Marcus Adriano Ferreira Pereira</strong></p>
+                        <ul>
+                            <li><strong>Líder Técnico</strong> no Banco Bradesco.</li>
+                            <li>Trabalha com micro-serviços no desenvolvimento de soluções financeiras.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
 </body>
+
 </html>

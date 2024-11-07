@@ -1,0 +1,330 @@
+/* Reset and general styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: fixed; /* Faz o header ficar fixo no topo */
+    top: 0; /* Fixa o header no topo da página */
+    left: 0; /* Alinha o header à esquerda */
+    width: 100%; /* Garante que o header ocupe toda a largura da página */
+    background-color: #3FA14C; /* Define a cor de fundo do header */
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    padding: 10px 20px; /* Adiciona um pouco de espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para dar destaque */
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header nav a {
+    margin: 0 15px; /* Espaça os links do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #ffffff; /* Cor do texto do link */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+header h1 {
+    font-size: 24px; /* Tamanho do título */
+    color: #ffffff; /* Cor do título */
+    margin: 0; /* Remove a margem do título */
+}
+
+
+header > div {
+    display: flex;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #50cb605d;
+    border-bottom: 2px solid #50cb60;
+    border-radius: 3px;
+}
+
+/* Main Section Styling */
+main {
+    margin: 20px;
+}
+
+/* Sobre Section */
+#sobre {
+    background-color: #f4f4f4;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+#sobre h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.div-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Container para a seção sobre */
+.sobre-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: space-between; /* Espaça os elementos */
+    gap: 20px; /* Adiciona um espaçamento entre o texto e a imagem */
+}
+
+/* Estilo da imagem */
+.iftm {
+    max-width: 40%; /* Limita a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+
+
+p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#palestras {
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#palestras h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.palestras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card Styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Card content */
+.card-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-content li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Palestrante Information */
+.card-palestrante {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.card-palestrante img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3FA14C;
+}
+
+.card-palestrante div {
+    flex-grow: 1;
+}
+
+.card-palestrante p {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-palestrante ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-palestrante li {
+    color: #555;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .palestras {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* Minicursos Section */
+#minicursos {
+    padding: 30px 20px;
+    background-color: #979797;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#minicursos h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.minicursos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card Styling for Minicurso */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    transition: all 0.5s;
+}
+
+.card:hover{
+    background-color: #e4f9e7d8;
+    cursor: pointer;
+}
+/* Card content for Minicurso */
+.card-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-content li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Minicurso Palestrante Information */
+.card-minicurso {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.card-minicurso img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: initial;
+    border: 4px solid #3FA14C;
+}
+
+.card-minicurso div {
+    flex-grow: 1;
+}
+
+.card-minicurso p {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-minicurso ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-minicurso li {
+    color: #555;
+    margin-bottom: 6px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #minicursos {
+        padding: 20px;
+    }
+
+    .minicursos {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
